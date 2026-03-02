@@ -2,7 +2,7 @@
 
 > Connect AI assistants to Todoist via MCP — 35 tools for task management, project organization, and AI-powered productivity features.
 
-[![Run on Apify](https://img.shields.io/badge/Run%20on-Apify-blue)](https://apify.com/mrbridge/todoist-ai-assistant?fpr=ebrunet001)
+**[Try it on Apify Store](https://apify.com/mrbridge/todoist-ai-assistant?fpr=ebrunet001)** | Pay-per-event | Free tier available
 
 ## Features
 
@@ -20,25 +20,21 @@
 
 ## Quick Start
 
-Connect to the MCP server using the Streamable HTTP endpoint:
+1. **[Open the Actor on Apify](https://apify.com/mrbridge/todoist-ai-assistant?fpr=ebrunet001)** and copy your [Todoist API token](https://todoist.com/app/settings/integrations/developer)
+2. Paste your Todoist token in the Actor's Input tab on Apify and click **Save**
+3. Connect your AI client using the MCP endpoint below
+
+### Claude Desktop
+
+Go to **Settings → MCP Servers → Add Custom Connector** and paste:
 
 ```
 https://mrbridge--todoist-ai-assistant.apify.actor/mcp?token=YOUR_APIFY_TOKEN
 ```
 
-### Setup (3 minutes)
-
-1. Copy your [Todoist API token](https://todoist.com/app/settings/integrations/developer)
-2. Go to the [Todoist MCP Server on Apify](https://apify.com/mrbridge/todoist-ai-assistant?fpr=ebrunet001), paste your token in the Input tab, and click **Save**
-3. [Get your Apify API token](https://console.apify.com/account/integrations?fpr=ebrunet001) and add the Standby URL above as a custom MCP connector in your AI client
-
-### Claude Desktop
-
-Go to **Settings → MCP Servers → Add Custom Connector** and paste the URL above.
-
 ### Claude Code
 
-Add the server URL to your MCP settings, then run `/permissions` and add `mcp__Todoist__*` to the Allow list.
+Add the endpoint above to your MCP settings, then run `/permissions` and add `mcp__Todoist__*` to the Allow list.
 
 ## Example Prompts
 
